@@ -79,7 +79,7 @@ This README conforms to established guidelines for scientific documentation by p
 Please cite this work if you use it:
 
 ```bibtex
-@article{your2025crosslingualbias,
+@article{crosslingualbias,
   title={Probing Cross-Lingual Bias Encoding in Transformer Models},
   author={Adil Rasheed},
   year={2025},
@@ -97,16 +97,4 @@ This project is released under the **MIT License** – see `LICENSE` for details
 
 ## 🧠 Acknowledgements
 
-This research builds upon foundational work in bias detection in word embeddings and contextualized models. Core inspiration and methods derive from the original WEAT methodology used to evaluate societal bias in embeddings. ([Ijeret][3])
-
-```
-
----
-
-If you’d like, I can also generate **GitHub badges (e.g., Python version, citation count, build status)** for the top of your README. Just ask!
-::contentReference[oaicite:4]{index=4}
-```
-
-[1]: https://github.com/jehna/readme-best-practices?utm_source=chatgpt.com "GitHub - jehna/readme-best-practices: Best practices for writing a README for your open source project"
-[2]: https://ucdavisdatalab.github.io/workshop_how-to-data-documentation/?utm_source=chatgpt.com "README,Write Me! Digital Project Organization and Documentation"
-[3]: https://ijeret.org/index.php/ijeret/article/view/200?utm_source=chatgpt.com "Bias Detection in AI Models Using Word Embedding Association Tests (WEAT) | International Journal of Emerging Research in Engineering and Technology"
+This research builds upon foundational work in bias detection in word embeddings and contextualized models. Core inspiration and methods derive from the original WEAT methodology used to evaluate societal bias in embeddings.
