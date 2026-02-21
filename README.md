@@ -1,8 +1,3 @@
-Absolutely — here is a **single unified `README.md` file content** that includes all aspects of your project in one place: project description, motivation, methodology, usage, results, authorship, and citations. It follows **best practices for scientific code repositories**, is clear to both researchers and developers, and ready-to-paste into your GitHub repo. ([GitHub][1])
-
----
-
-```markdown
 # Probing Cross-Lingual Bias Encoding in Transformer Models
 
 This repository provides a reproducible research framework for quantifying and analyzing **gender-science bias** in transformer-based language models using the *Word Embedding Association Test (WEAT)*. The work systematically compares multiple transformer architectures, evaluates cross-lingual bias in English and Urdu, and explores how bias evolves across hidden layers of neural models.
@@ -27,88 +22,16 @@ This repository aims to:
 
 ---
 
-## 📁 Repository Structure
-
-```
-
-.
-├── data/
-│   ├── english_imdb/           # English corpus samples (IMDb)
-│   └── urdu_news/              # Urdu news text
-├── notebooks/                  # Jupyter notebooks
-│   ├── weat_computation.ipynb
-│   ├── layer_bias_analysis.ipynb
-│   └── visualization.ipynb
-├── src/                        # Source code modules
-│   ├── weat_utils.py
-│   ├── layer_analysis.py
-│   └── viz_helpers.py
-├── results/                    # Generated figures and tables
-├── requirements.txt            # Python dependencies
-└── README.md
-
-````
-
----
-
 ## 🛠 Setup & Installation
 
 Clone the repository and set up the environment:
 
 ```bash
-git clone https://github.com/<your-username>/crosslingual-transformer-bias.git
-cd crosslingual-transformer-bias
+git clone https://github.com/adilrasheed139/Probing-Cross-Lingual-Bias-Encoding-in-Transformers
 ````
-
-Create and activate a Python environment:
-
-```bash
-python3 -m venv venv
-source venv/bin/activate
-```
-
-Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
----
-
 ## 🧠 Methodology
 
 This project uses the Word Embedding Association Test (WEAT) to quantify bias by comparing the cosine similarities between groups of target words (e.g., *math* vs. *arts*) and groups of attribute words (e.g., *male* vs. *female*). The effect size is a normalized score indicating the relative association strength. For robust evaluation, permutation testing is used to estimate statistical significance. Effect sizes and distributions are calculated for both model-level embeddings and intermediate hidden states.
-
----
-
-## 📊 Command Line Examples
-
-### Compute WEAT Effect Size
-
-```bash
-python src/weat_utils.py \
-  --model bert-base-uncased \
-  --language english \
-  --output results/english_weat.json
-```
-
-### Layer-Wise Bias Sweep (English)
-
-```bash
-python src/layer_analysis.py \
-  --model bert-base-uncased \
-  --language english \
-  --output results/bert_layer_bias.csv
-```
-
-### Multilingual Bias Sweep (Urdu)
-
-```bash
-python src/layer_analysis.py \
-  --model xlm-roberta-base \
-  --language urdu \
-  --output results/xlmr_layer_bias.csv
-```
 
 ---
 
@@ -131,7 +54,7 @@ The repository includes visualizations referenced in the research manuscript:
 | **Word-Level Bias Profile English (BERT) Layer 2**       | Radar plot of individual English word biases.            |
 | **Word-Level Bias Profile Urdu (XLM-R) Layer 11**        | Radar plot for individual Urdu word biases.              |
 
-All figure files are located under the `results/` directory and are suitable for academic presentations and publications.
+All figure files are located in the `PDF` document and are suitable for academic presentations and publications.
 
 ---
 
@@ -144,9 +67,9 @@ This README conforms to established guidelines for scientific documentation by p
 ## ✍️ Authorship
 
 **Probing Cross-Lingual Bias Encoding in Transformer Models**
-**Author:** *Your Name*
-**Affiliation:** *Your University / Company*
-**Email:** *[your.email@domain.com](mailto:your.email@domain.com)*
+**Author:** *Adil Rasheed*
+**Affiliation:** *Government College University Faisalabad*
+**Email:** *[adilrasheed139@gmail.com](mailto:adilrasheed139@gmail.com)*
 **Status:** Under process ( manuscript and code development )
 
 ---
@@ -158,7 +81,7 @@ Please cite this work if you use it:
 ```bibtex
 @article{your2025crosslingualbias,
   title={Probing Cross-Lingual Bias Encoding in Transformer Models},
-  author={Your Name},
+  author={Adil Rasheed},
   year={2025},
   note={Under process / manuscript in preparation}
 }
